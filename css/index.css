@@ -152,11 +152,6 @@ h5 {
 h2 {
   font-size: 3.2rem;
 }
-@media (max-width: 500px) {
-  h2 {
-    font-size: 5rem;
-  }
-}
 h3 {
   font-size: 2.8rem;
 }
@@ -168,12 +163,16 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 79px;
 }
 nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
   height: auto;
   background-color: #F6F6F6;
   padding-top: 1.5rem;
@@ -242,14 +241,46 @@ footer {
     margin: 20px 30px;
   }
 }
-.home .space-images img {
+.home .space-images .wrapper {
   width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: auto;
+}
+.home .space-images .wrapper:hover img {
+  width: 110%;
+  height: 100%;
+  margin: 10px 2%;
+  opacity: 0.2;
+}
+.home .space-images .wrapper:hover .image-hover-text {
+  visibility: visible;
+  color: black;
+  text-align: center;
+  width: 17%;
+  padding-top: 8rem;
+  margin: 20px 2.5%;
+  position: absolute;
+  text-decoration: bold;
+}
+.home .space-images .wrapper .image-hover-text {
+  position: absolute;
+  width: 100%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+  padding: 10px;
+  visibility: hidden;
+  color: white;
+}
+.home .space-images .wrapper img {
+  width: 100%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
 }
 @media (max-width: 500px) {
-  .home .space-images img {
+  .home .space-images .wrapper img {
     display: none;
   }
 }
