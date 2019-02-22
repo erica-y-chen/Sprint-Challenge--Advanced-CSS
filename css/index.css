@@ -165,17 +165,26 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 8rem;
+  height: auto;
   background-color: #F6F6F6;
+  padding-top: 1.5rem;
+  border-bottom: 2px solid #F1F1F1;
 }
 nav .menu-buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
 }
 nav .menu-buttons a {
-  margin-left: 5rem;
+  margin-left: 1.8rem;
+  text-decoration: none;
+  color: black;
+}
+nav .menu-buttons a:first-child {
+  margin-left: 0;
 }
 footer {
   color: #22283B;
@@ -228,6 +237,18 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #22283A;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 5px;
+  color: white;
+  width: 11rem;
+  margin-left: 0;
+  height: 4rem;
+  padding-top: 1rem;
 }
 .home .walk .walk-img {
   width: 46%;

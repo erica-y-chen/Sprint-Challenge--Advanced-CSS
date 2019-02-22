@@ -2,13 +2,22 @@
 
 nav{
     .flex(column);
-    height: 8rem;
+    height: auto;
     background-color:@nav-bg;
+    padding-top: 1.5rem;
+    border-bottom: 2px solid @nav-border;
     .menu-buttons{
         .flex(row);
-
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
         a {
-            margin-left: 5rem;
+            margin-left: 1.8rem;
+            text-decoration: none;
+            color: black;
+        }
+        
+        a:first-child {
+            margin-left: 0;
         }
     }
 }
