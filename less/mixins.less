@@ -3,8 +3,11 @@
 .flex(@direction) {
     display: flex;
     flex-direction: @direction; 
+}
+
+.flex-center {
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .button(@background-color, @text-size, @radius) {
@@ -13,4 +16,10 @@
     text-align: center;
     margin: 0 auto;
     border-radius: @radius;
+
+    :hover {
+        cursor: pointer;
+        background-color: white;
+        color: @btn-bg-color;
+      }
 }

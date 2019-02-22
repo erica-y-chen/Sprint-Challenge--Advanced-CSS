@@ -1,3 +1,7 @@
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -148,6 +152,11 @@ h5 {
 h2 {
   font-size: 3.2rem;
 }
+@media (max-width: 500px) {
+  h2 {
+    font-size: 5rem;
+  }
+}
 h3 {
   font-size: 2.8rem;
 }
@@ -170,11 +179,14 @@ nav {
   padding-top: 1.5rem;
   border-bottom: 2px solid #F1F1F1;
 }
+@media (max-width: 500px) {
+  nav h2 {
+    font-size: 4rem;
+  }
+}
 nav .menu-buttons {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
 }
@@ -182,6 +194,11 @@ nav .menu-buttons a {
   margin-left: 1.8rem;
   text-decoration: none;
   color: black;
+}
+@media (max-width: 500px) {
+  nav .menu-buttons a {
+    margin-left: 3rem;
+  }
 }
 nav .menu-buttons a:first-child {
   margin-left: 0;
@@ -199,19 +216,42 @@ footer {
 .home .intro h2 {
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .home .intro h2 {
+    font-size: 3rem;
+  }
+}
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  width: 100%;
 }
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
+.home .space-images .blast-phone {
+  display: none;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast-phone {
+    display: flex;
+    width: 100%;
+    margin: 20px 30px;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -229,8 +269,21 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 30px 30px 20px 30px;
+    margin-top: 10px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -250,9 +303,43 @@ footer {
   height: 4rem;
   padding-top: 1rem;
 }
+.home .walk .walk-text .btn :hover {
+  cursor: pointer;
+  background-color: white;
+  color: #22283A;
+}
+.home .walk .walk-text .btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #22283A;
+  border: 2px solid #22283A;
+  padding-top: 0.8rem;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn:hover {
+    background-color: #22283A;
+    color: white;
+    border: none;
+    padding-top: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    height: 7rem;
+    padding-top: 2.5rem;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: -10px 30px 20px 30px;
+    margin-left: 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;

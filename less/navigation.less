@@ -2,10 +2,17 @@
 
 nav{
     .flex(column);
+    .flex-center;
     height: auto;
     background-color:@nav-bg;
     padding-top: 1.5rem;
     border-bottom: 2px solid @nav-border;
+
+    h2{
+        @media @phone {
+            font-size: 4rem;
+          }
+    }
     .menu-buttons{
         .flex(row);
         padding-top: 1.5rem;
@@ -14,6 +21,10 @@ nav{
             margin-left: 1.8rem;
             text-decoration: none;
             color: black;
+
+            @media @phone {
+                margin-left: 3rem;
+              }
         }
         
         a:first-child {
